@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types'
+// import PropTypes from 'prop-types'
 import { Card, Description, UserImg, UserName, UserTag, UserLocation, UserStats, UserStatsItem, UserStatsIndicator, UserStatsValue } from './UserCard.styled'
 
 export const UserCard = ({ username, tag, location, avatar, stats }) => {
