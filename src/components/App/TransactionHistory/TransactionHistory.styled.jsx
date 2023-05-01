@@ -1,7 +1,9 @@
 import styled from "@emotion/styled";
 
 export const Table = styled.table`
- border-collapse: collapse;`
+ border-collapse: collapse;
+ margin: 10px auto;
+` 
 
 export const TableHead = styled.thead``
 

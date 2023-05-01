@@ -1,71 +1,66 @@
 import styled from "@emotion/styled";
 
 export const Card = styled.div`
-  border: 2px dashed black;
+  margin: 0 auto 20px auto;
   padding: 8px;
-  border-radius: 4px;
-  width: 50%;
-    text-align: center;
-
-
-  background-color: #809000;
+  
+  width: 300px;
+  
+  border-radius: 6px;
+  
+  text-align: center;
+  background-color: aquamarine;
 `
 
 export const Description = styled.div`
-  background-color: white;
-  height: 100px;
+  padding-top: 10px;
+  padding-bottom: 24px;
 
-      padding-top: 30px;
-    padding-bottom: 24px;
+
+  font-size: 14px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 `
 
 export const UserImg = styled.img`
-height: 100%;
-border-radius: 50%;
+  height: 100px;
+  border-radius: 50%;
 `
 
 export const UserName = styled.p`
-    margin-bottom: 10px;
-
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-    letter-spacing: 0.03em;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
 `
 
 export const UserTag = styled.p`
-    margin-bottom: 16px;
-
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-    letter-spacing: 0.03em;
+  margin-bottom: 8px;
 `
 
 export const UserLocation = styled.p`
-    margin-bottom: 16px;
-
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-    letter-spacing: 0.03em;
+  margin-bottom: 8px;
 `
 
 export const UserStatsList = styled.ul`
 display: flex;
-gap: 5px;
+justify-content: center;
+gap: 15px;
+
+margin: 0;
+padding: 0;
+list-style: none;
 `
 
 export const UserStatsItem = styled.li`
-list-style: none;
-
+display: flex;
+flex-direction: column;
 `
+
 export const UserStatsIndicator = styled.span`
-display: block
+margin-bottom: 5px;
+font-weight: 500;
 `
-export const UserStatsValue = styled.span`
-display: block
 
+export const UserStatsValue = styled.span`
 `
 

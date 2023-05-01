@@ -1,10 +1,27 @@
 import styled from "@emotion/styled";
 
-export const List = styled.ul``
+export const List = styled.ul`
+width: 300px;
+margin: 10px auto;
+
+text-align: center;
+
+// margin: 0;
+padding: 0;
+list-style: none;
+`
 
 export const FriendItem = styled.li`
-list-style: none;
+display: flex;
+gap: 15px;
+justify-content: center;
+align-items: center;
 
+margin-bottom: 10px;
+
+background-color: aquamarine;
+
+list-style: none;
 `
 export const FriendStatus = styled.span`
 display: block;
