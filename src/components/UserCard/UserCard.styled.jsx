@@ -52,7 +52,7 @@ export const UserLocation = styled.p`
     letter-spacing: 0.03em;
 `
 
-export const UserStats = styled.ul`
+export const UserStatsList = styled.ul`
 display: flex;
 gap: 5px;
 `

@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import { Card, Description, UserImg, UserName, UserTag, UserLocation, UserStats, UserStatsItem, UserStatsIndicator, UserStatsValue } from './UserCard.styled'
+import { Card, Description, UserImg, UserName, UserTag, UserLocation, UserStatsList, UserStatsItem, UserStatsIndicator, UserStatsValue } from './UserCard.styled'
 
 export const UserCard = ({ username, tag, location, avatar, stats }) => {
     const arrayOfStats = Object.entries(stats)
@@ -12,14 +12,14 @@ export const UserCard = ({ username, tag, location, avatar, stats }) => {
                 <UserTag>{tag}</UserTag>
                 <UserLocation>{location}</UserLocation>
             </Description>
-            <UserStats>
+            <UserStatsList>
                     {arrayOfStats.map((item) => {
                         return (<UserStatsItem key={item[0]}>
                             <UserStatsIndicator>{item[0]}</UserStatsIndicator>
                             <UserStatsValue>{item[1]}</UserStatsValue>
                         </UserStatsItem>)
                     })}               
-            </UserStats>
+            </UserStatsList>
         </Card>
     )
 }
