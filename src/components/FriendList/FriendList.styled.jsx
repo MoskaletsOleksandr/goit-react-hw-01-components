@@ -11,7 +11,9 @@ display: block;
 width: 20px;
 height: 20px;
 border-radius: 50%;
-background-color: red;
+background-color: ${({isOnline}) => {
+   return isOnline ? 'green' : 'red'
+}};
 `
 
 export const FriendImg = styled.img`

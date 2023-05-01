@@ -2,10 +2,13 @@ import { Container } from "./App.styled";
 import { UserCard } from "components/UserCard/UserCard";
 import { Statistics } from "components/Statistics/Statistics";
 import { FriendsList } from "components/FriendList/FriendList"
+import { TransactionHistory } from "./TransactionHistory/TransactionHistory";
 
 import user from '../../data/user'
 import data from '../../data/data'
 import friends from '../../data/friends'
+import transactions from '../../data/transactions'
+
 
 export const App = () => {
   return (
@@ -22,6 +25,7 @@ export const App = () => {
         stats={data}
       />
       <FriendsList friends={friends} />
+      <TransactionHistory items={transactions} />
     </Container>
   );
 };
