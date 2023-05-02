@@ -4,7 +4,7 @@ import {StatisticsSection, Title, StatsList, StatsItem, StatsLabel, StatsValue} 
 export const Statistics = ({ title, stats }) => {
     return (
         <StatisticsSection>
-            <Title>{title}</Title>
+            {title && <Title>{title}</Title>}
             <StatsList>
                 {stats.map((item) => {
                     return (
